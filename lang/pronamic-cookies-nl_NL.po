@@ -2,49 +2,127 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pronamic Events\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-03 14:31+0100\n"
-"PO-Revision-Date: 2013-01-03 14:32+0100\n"
-"Last-Translator: K.Tolsma <kareljan@pronamic.nl>\n"
+"POT-Creation-Date: 2013-02-07 15:25+0100\n"
+"PO-Revision-Date: 2013-02-07 15:25+0100\n"
+"Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
+"Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;__ngettext:1,2;__withdesc;_ewithdesc;_c;_n_noop:1,2;__ngettext_noop:1,2;_x:2c,1;_nc:1,2;esc_attr_e;esc_html_e;esc_attr__;_nx:4c,1,2;_nx_noop:4c,1,2;esc_html_x:2c,1;esc_html__;_ex:2c,1\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;__ngettext:1,2;__withdesc;_ewithdesc;_c;"
+"_n_noop:1,2;__ngettext_noop:1,2;_x:2c,1;_nc:1,2;esc_attr_e;esc_html_e;"
+"esc_attr__;_nx:4c,1,2;_nx_noop:4c,1,2;esc_html_x:2c,1;esc_html__;_ex:2c,1\n"
 "X-Poedit-Basepath: ../\n"
-"X-Poedit-Language: Dutch\n"
-"X-Poedit-Country: NETHERLANDS\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: views/message.php:2
-msgid "Close"
-msgstr "Sluit"
+#: functions.php:15 functions.php:46
+msgid "Cookie Law Notice"
+msgstr "Cookie wet bericht"
 
-#: views/admin/display_options_page.php:3
-#: classes/class-pronamic-cookie-law-admin.php:33
-msgid "Pronamic Cookie Law Options"
-msgstr "Pronamic Cookie Law opties"
+#: functions.php:16 functions.php:39 functions.php:68
+msgid "Accept cookie"
+msgstr "Cookies accepteren"
 
-#: classes/class-pronamic-cookie-law-admin.php:15
-#: classes/class-pronamic-cookie-law-admin.php:16
-msgid "Pronamic Cookie Law"
-msgstr "Pronamic Cookie Law"
+#: functions.php:40 functions.php:69
+msgid "Decline cookie"
+msgstr "Niet accepteren"
 
-#: classes/class-pronamic-cookie-law-admin.php:40
+#: classes/class-pronamic-cookies-admin.php:19
+#: classes/class-pronamic-cookies-admin.php:20
+msgid "Pronamic Cookies"
+msgstr "Pronamic Cookies"
+
+#: classes/class-pronamic-cookies-admin.php:35
+msgid "Bar"
+msgstr "Balk"
+
+#: classes/class-pronamic-cookies-admin.php:42
+#: classes/class-pronamic-cookies-admin.php:115
+msgid "Active?"
+msgstr "Actief?"
+
+#: classes/class-pronamic-cookies-admin.php:50
+#: classes/class-pronamic-cookies-admin.php:123
+#: classes/class-pronamic-cookies-admin.php:162
+msgid "Yes"
+msgstr "Ja"
+
+#: classes/class-pronamic-cookies-admin.php:54
+#: classes/class-pronamic-cookies-admin.php:127
+#: classes/class-pronamic-cookies-admin.php:166
+msgid "No"
+msgstr "Nee"
+
+#: classes/class-pronamic-cookies-admin.php:63
 msgid "Location"
 msgstr "Locatie"
 
-#: classes/class-pronamic-cookie-law-admin.php:48
+#: classes/class-pronamic-cookies-admin.php:71
 msgid "Top"
 msgstr "Boven"
 
-#: classes/class-pronamic-cookie-law-admin.php:52
+#: classes/class-pronamic-cookies-admin.php:75
 msgid "Bottom"
 msgstr "Onder"
 
-#: classes/class-pronamic-cookie-law-admin.php:61
+#: classes/class-pronamic-cookies-admin.php:84
+#: classes/class-pronamic-cookies-admin.php:145
 msgid "Text"
 msgstr "Tekst"
+
+#: classes/class-pronamic-cookies-admin.php:93
+msgid "Link"
+msgstr "Link"
+
+#: classes/class-pronamic-cookies-admin.php:108
+msgid "Wall"
+msgstr "Muur"
+
+#: classes/class-pronamic-cookies-admin.php:136
+msgid "Title"
+msgstr "Titel"
+
+#: classes/class-pronamic-cookies-admin.php:154
+msgid "Show link?"
+msgstr "Link weergeven?"
+
+#: classes/class-pronamic-cookies-admin.php:175
+msgid "Background Image"
+msgstr "Achtergrond afbeelding"
+
+#: classes/class-pronamic-cookies-admin.php:184
+msgid "Background Color"
+msgstr "Achtergrond kleur"
+
+#: classes/class-pronamic-cookies-admin.php:260
+msgid "Upload"
+msgstr "Upload"
+
+#: classes/class-pronamic-cookies.php:66
+msgid "Accept"
+msgstr "Accepteer"
+
+#: classes/class-pronamic-cookies.php:67
+msgid "Read more about the cookies on this site here"
+msgstr "Lees meer over de cookies op de volgende website"
+
+#: views/message.php:8
+msgid "Close"
+msgstr "Sluit"
+
+#, fuzzy
+#~ msgid "Pronamic Cookies Options"
+#~ msgstr "Pronamic Cookie Law opties"
+
+#, fuzzy
+#~ msgid "Pronamic Cookie Blocker Options"
+#~ msgstr "Pronamic Cookie Law opties"
+
+#~ msgid "Pronamic Cookie Law Options"
+#~ msgstr "Pronamic Cookie Law opties"
 
 #~ msgid "Feeds Messages"
 #~ msgstr "Feeds berichten"
@@ -57,16 +135,16 @@ msgstr "Tekst"
 
 #~ msgid "URL"
 #~ msgstr "URL"
-#~ msgctxt "custom post type feeds"
 
+#~ msgctxt "custom post type feeds"
 #~ msgid "Feeds"
 #~ msgstr "Feeds"
-#~ msgctxt "custom post type singular"
 
+#~ msgctxt "custom post type singular"
 #~ msgid "Feed"
 #~ msgstr "Feed"
-#~ msgctxt "add new feed"
 
+#~ msgctxt "add new feed"
 #~ msgid "Add New"
 #~ msgstr "Nieuwe toevoegen"
 
@@ -123,12 +201,12 @@ msgstr "Tekst"
 
 #~ msgid "Posts per feed"
 #~ msgstr "Aantal berichten per feed"
-#~ msgctxt "post type general name"
 
+#~ msgctxt "post type general name"
 #~ msgid "Events"
 #~ msgstr "Evenementen"
-#~ msgctxt "post type singular name"
 
+#~ msgctxt "post type singular name"
 #~ msgid "Event"
 #~ msgstr "Evenement"
 
@@ -149,12 +227,12 @@ msgstr "Tekst"
 
 #~ msgid "Agenda"
 #~ msgstr "Agenda"
-#~ msgctxt "class general name"
 
+#~ msgctxt "class general name"
 #~ msgid "Event categories"
 #~ msgstr "Agenda categorieën"
-#~ msgctxt "class singular name"
 
+#~ msgctxt "class singular name"
 #~ msgid "Event category"
 #~ msgstr "Agenda categorieën"
 
@@ -329,9 +407,6 @@ msgstr "Tekst"
 #~ msgid "<p>The payment process is successfully completed.</p>"
 #~ msgstr "<p>Het betalingsproces is succesvol voltooid.</p>"
 
-#~ msgid "Title"
-#~ msgstr "Titel"
-
 #~ msgid "Slug"
 #~ msgstr "Slug"
 
@@ -408,7 +483,6 @@ msgstr "Tekst"
 #~ msgstr "versie %s"
 
 #~ msgid "Configuration deleted."
-
 #~ msgid_plural "Configurations deleted."
 #~ msgstr[0] "Configuratie verwijderd."
 #~ msgstr[1] "Configuraties verwijderd."
@@ -631,7 +705,6 @@ msgstr "Tekst"
 #~ msgstr "Consumenten bericht"
 
 #~ msgid "Feed deleted."
-
 #~ msgid_plural "Feeds deleted."
 #~ msgstr[0] "Feed verwijderd."
 #~ msgstr[1] "Feeds verwijderd."
@@ -647,9 +720,6 @@ msgstr "Tekst"
 
 #~ msgid "To get started, please configure your %s."
 #~ msgstr "Om te beginnen configureer je %s."
-
-#~ msgid "Active"
-#~ msgstr "Actief"
 
 #~ msgid "Inactive"
 #~ msgstr "Inactief"
@@ -909,12 +979,6 @@ msgstr "Tekst"
 #~ msgid "iDEAL Options"
 #~ msgstr "iDEAL opties"
 
-#~ msgid "Yes"
-#~ msgstr "Ja"
-
-#~ msgid "No"
-#~ msgstr "Nee"
-
 #~ msgid "ClassiPress"
 #~ msgstr "ClassiPress"
 
@@ -1031,9 +1095,6 @@ msgstr "Tekst"
 #~ msgid "iDEAL Form Settings"
 #~ msgstr "iDEAL formulier instellingen"
 
-#~ msgid "Links"
-#~ msgstr "Koppelingen"
-
 #~ msgid "Pay"
 #~ msgstr "Betalen"
 
@@ -1067,8 +1128,8 @@ msgstr "Tekst"
 
 #~ msgid "Search Transactions"
 #~ msgstr "Zoek transacties"
-#~ msgctxt "link name"
 
+#~ msgctxt "link name"
 #~ msgid "Name"
 #~ msgstr "Naam"
 
@@ -1092,9 +1153,6 @@ msgstr "Tekst"
 #~ msgid "Acquirer"
 #~ msgstr "Acquirer"
 
-#~ msgid "Acceptant ID"
-#~ msgstr "Acceptant ID"
-
 #~ msgid "Key"
 #~ msgstr "Sleutel"
 
@@ -1103,12 +1161,12 @@ msgstr "Tekst"
 
 #~ msgid "Custom URL:"
 #~ msgstr "Maatwerk URL:"
-#~ msgctxt "post type general name"
 
+#~ msgctxt "post type general name"
 #~ msgid "Blocks"
 #~ msgstr "Blokken"
-#~ msgctxt "post type singular name"
 
+#~ msgctxt "post type singular name"
 #~ msgid "Block"
 #~ msgstr "Blok"
 
