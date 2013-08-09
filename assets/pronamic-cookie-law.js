@@ -189,14 +189,14 @@ var Pronamic_Cookies = {
                     name = jQuery(this).data('name');
 
                 if(Pronamic_Cookies.dynamic.check_it('pcl_section_' + name))
-                    Pronamic_Cookies.dynamic.fill_it(container)
+                    Pronamic_Cookies.dynamic.fill_it(container);
             });
         }
     },
     cookie: {
         all:{},
         make: function( args ) {
-            document.cookie = escape( args.name ) + '=' + escape( args.value ) + "; path=/";
+            document.cookie = escape( args.name ) + '=' + escape( args.value ) + "; path=" + Pronamic_Cookies_Vars.cookie.path + ';expires=' + Pronamic_Cookies_Vars.cookie.expires;
         }
 
     }
