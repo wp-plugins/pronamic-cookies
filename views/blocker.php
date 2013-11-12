@@ -61,16 +61,30 @@
 				text-decoration:none;
 			}
 		</style>
-
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php echo $javascript_url; ?>"></script>
 		<script type="text/javascript">jQuery(Pronamic_Cookies.blocker.ready);</script>
 		<script type="text/javascript">
 			
-			<?php $expires_date = new DateTime( get_option( 'pronamic_cookie_options_advanced_expires', '1 year' ), new DateTimeZone( 'GMT' ) ); ?>
+			<?php 
+			
+			$setting_expire = get_option( 'pronamic_cookie_options_advanced_expires', '1 year' );
+			
+			if ( empty( $setting_expire ) )
+				$setting_expire = '1 year';
+			
+			$setting_path = get_option( 'pronamic_cookie_options_advanced_path', '/' );
+			
+			if ( empty( $setting_path ) )
+				$setting_path = '/';
+			
+			$expires_date = new DateTime( $setting_expire, new DateTimeZone( 'GMT' ) ); 
+			
+			?>
 			var Pronamic_Cookies_Vars = {
 				cookie: {
-					path:"<?php echo get_option( 'pronamic_cookie_options_advanced_path', '/' ); ?>",
+					path:"<?php echo $setting_path; ?>",
 					expires: "<?php echo $expires_date->format( 'D, d M Y H:i:s e' ); ?>"
 				}
 			};
@@ -89,7 +103,7 @@
 				<a class="pronamic_accept_button jBlockerAccept" href="#" data-refresh="true"><?php echo $accept_button_text; ?></a>
 
 				<?php if ( $cookie_law_link_show == 1 ): ?>
-					<a href="<?php echo $cookie_law_link; ?>"><?php echo $law_link_text; ?></a>
+					<a href="<?php echo esc_attr( $cookie_law_link ); ?>"><?php echo $law_link_text; ?></a>
 				<?php endif;?>
 			</div>
 		</div>
